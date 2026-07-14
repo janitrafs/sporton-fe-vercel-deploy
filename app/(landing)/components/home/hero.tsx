@@ -1,5 +1,6 @@
 import { FiFastForward } from "react-icons/fi";
 import Button from "../ui/button";
+import Image from "next/image";
 
 const HeroSection = () => {
     return (
@@ -24,20 +25,20 @@ const HeroSection = () => {
                         Explore More <FiFastForward />
                     </Button>
                     <Button  variant="ghost">
-                        Watch Video <img src= "/Images/icon-play-video.svg" 
+                        Watch Video <Image src= "/Images/icon-play-video.svg" 
                         alt="icon-play-video" 
                         width={29} 
                         height={29} />
                     </Button>
                 </div>
                 </div>
-               <img src="/images/img-hero.png" 
+               <Image src="/images/img-hero.png" 
                width={700}
                height={950}
                alt="image-sport-on-hero"
                className="absolute -right-5 top-1/2 -translate-y-1/2" /> 
             </div>
-            <img src="/images/img-ornament-hero.svg" 
+            <Image src="/images/img-ornament-hero.svg" 
             width={430} 
             height={430}
             alt="image-ornament-sporton"
