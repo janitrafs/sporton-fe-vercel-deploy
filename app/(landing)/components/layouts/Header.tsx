@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FiSearch, FiShoppingBag } from "react-icons/fi";
+import CartPopup from "../ui/cart-popup";
 
 const Header = () => {
     return (<header>
@@ -25,6 +26,7 @@ const Header = () => {
                     3
                 </div>
             </div>
+            <CartPopup />
         </div>
     </div>
 </header>);
