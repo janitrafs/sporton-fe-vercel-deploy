@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import priceFormatter from "@/app/utils/price-formatter";
 import Image from "next/image";
 import Button from "./button";
@@ -62,6 +63,13 @@ const CartPopup = () => {
             </div>
             <Button variant="dark" size="small" className="w-full mt-4">Checkout Now <FiArrowRight /></Button>
         </div>
+=======
+const CartPopup = () => {
+    return <div className="absolute bg-white right-0 top-12 shadow-xl shadow-black/10 border border-gray-200 w-90">
+        <div className="p-4 border-b border-gray-200 font-bold text-center">
+            Shopping Cart
+        </div>
+>>>>>>> fa2721bd64f48c7338635a578eca47076ca0e75e
     </div>
 }
 
