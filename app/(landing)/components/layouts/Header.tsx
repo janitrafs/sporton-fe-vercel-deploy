@@ -4,11 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiSearch, FiShoppingBag } from "react-icons/fi";
 import CartPopup from "../ui/cart-popup";
-<<<<<<< HEAD
 import { useState } from "react";
-import Button from "../ui/button";
-=======
->>>>>>> fa2721bd64f48c7338635a578eca47076ca0e75e
+
 
 const Header = () => {
     const [isCartPopUpOpen, setIsCartPopUpOpen] = useState(false);
@@ -34,13 +31,8 @@ const Header = () => {
                 <div className="bg-primary rounded-full w-3.5 h-3.5 absolute -top-1 -right-1 text-[10px] text-white text-center">
                     3
                 </div>
-<<<<<<< HEAD
             </button>
             {isCartPopUpOpen && <CartPopup />}
-=======
-            </div>
-            <CartPopup />
->>>>>>> fa2721bd64f48c7338635a578eca47076ca0e75e
         </div>
     </div>
 </header>);
