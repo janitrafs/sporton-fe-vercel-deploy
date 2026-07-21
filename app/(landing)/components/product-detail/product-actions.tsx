@@ -22,8 +22,10 @@ const ProductActions = ({product, stock}: TProductActionsProps) => {
         addItem(product, qty)
     }
 
-    const checkout = () => {
-    } 
+    const handleCheckout = () => {
+    addItem(product);
+    push("/checkout");
+  }; 
 
     return (
         <div className="flex gap-5">
@@ -42,10 +44,10 @@ const ProductActions = ({product, stock}: TProductActionsProps) => {
                     </button>
                 </div>
             </div>
-            <Button className="px-20 w-full">
+            <Button className="px-20 w-full onClick={handleAddtoCart}">
                 <FiShoppingBag size={24} />Add to Cart
             </Button>
-            <Button variant="dark" className="px-20 w-full" onClick={() => push("/checkout")}>
+            <Button variant="dark" className="px-20 w-full" onClick={handleCheckout}>
                 Checkout Now
                 <FiArrowRight size={24} />
             </Button>
